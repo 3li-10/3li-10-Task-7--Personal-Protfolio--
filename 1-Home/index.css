@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+
+
+/* Edit header Space*/
+header {
+  width: 100%;
+  padding-inline: 50px;
+  padding-block: 25px;
+  border-bottom: 1px solid #00000025;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Menu Icon */
+.icon {
+  display: none;
+}
+
+.icon i {
+  color: #2d2d2d;
+}
+
+/* Edit Logo Space */
+header h2 {
+  width: calc(100%-33%);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #2d2d2d;
+}
+
+/* Edit Link Spaces */
+nav {
+  display: flex;
+  gap: 40px;
+}
+
+/* Link Style */
+nav a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #2d2d2d;
+}
+
+/* Links Effict */
+nav a:hover {
+  color: #1576d6;
+}
+
+/* Header Responsive */
+@media screen and (min-width: 0px) and (max-width: 767px) {
+header{
+  width: 100%;
+}
+
+  nav {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+  }
+}
+
+/* Content */
+
+/* Section Spaces*/
+section {
+  padding-block: 62px;
+  padding-inline: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
+/* Content Spaces*/
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Content Style */
+
+/* h3 */
+.content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #2d2d2d;
+}
+
+/* h1 */
+.content h1 {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 90px;
+  color: #2d2d2d;
+}
+
+/* Section Responsive */
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  section {
+    flex-direction: column;
+  }
+
+  .content {
+    order: 1;
+  }
+
+  /* h3 */
+  .content h3 {
+    width: 310px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  /* h1 */
+  .content h1 {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 45.1px;
+    text-align: center;
+  }
+
+  img {
+    order: 2;
+    width: 385px;
+  }
+}

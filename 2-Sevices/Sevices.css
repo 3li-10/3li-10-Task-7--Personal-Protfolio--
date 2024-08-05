@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+/* Edit header Space*/
+header {
+  /* height: 80px; */
+  padding-inline: 50px;
+  padding-block: 25px;
+  border-bottom: 1px solid #00000025;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Menu Icon */
+.icon {
+  display: none;
+}
+
+.icon i {
+  color: #2d2d2d;
+}
+
+/* Edit Logo Space */
+header h2 {
+  width: calc(100%-33%);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #2d2d2d;
+}
+
+/* Edit Link Spaces */
+nav {
+  display: flex;
+  gap: 40px;
+}
+
+/* Link Style */
+nav a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #2d2d2d;
+}
+
+/* Links Effict */
+nav a:hover {
+  color: #1576d6;
+}
+
+/* Header Responsive */
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    height: 90vh;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+  }
+}
+
+/*  (gap => 148px) Header , Section عشان اعمل مسافة بين ال  */
+.container {
+  /* Scrol عشان الغي  */
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
+/* Control Cards */
+.cards {
+  height: 100vh;
+  width: 100%;
+  padding-block: 148px;
+  padding-inline: 140.5px;
+  display: flex;
+  gap: 125px;
+}
+
+/* Control Cards Content */
+.card {
+  width: calc((100% - 250px) / 3);
+  height: 328px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
+
+.card img {
+  width: 130px;
+  height: 130px;
+}
+
+/*  (gap => 19px) p , h3 عشان اعمل مسافة بين ال  */
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+}
+
+.card h3 {
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 42px;
+  color: #2d2d2d;
+}
+
+.card p {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #2d2d2d;
+}
+
+/* cards Responsive*/
+@media screen and (max-width: 767px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .card .text h3{
+    width: 250px;
+    text-align: center;
+  }
+}
